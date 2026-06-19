@@ -22,4 +22,15 @@ Fonte: [Kaggle - Sample Sales Data]
 - `ORDER BY` per ordinare i risultati
 - Alias di colonna (`AS`) per output leggibili
   Fonte: [SQL Practice Dataset 1 (Easy) + Queries](https://www.kaggle.com/datasets/nudratabbas/sql-practice-dataset-1-easy-queries?resource=download)
-  
+  ## Analisi in Python
+
+Ho replicato parte dell'analisi anche in Python, usando la libreria pandas, per confrontare i due approcci sullo stesso dataset.
+
+**Tecniche Python/pandas utilizzate:**
+- `pd.read_csv()` per caricare i dati
+- `df.info()`, `df.describe()`, `value_counts()` per l'esplorazione iniziale
+- `merge()` per unire le tabelle (equivalente del JOIN in SQL)
+- `groupby()` con aggregazioni (`sum()`) per le analisi raggruppate
+- Creazione di colonne calcolate (es. fatturato = quantity × price)
+
+**File:** `analisi_vendite_python.ipynb`
